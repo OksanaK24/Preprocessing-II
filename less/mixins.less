@@ -1,1 +1,18 @@
 // Mixins in here
+.situate(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@button-bg, @main-bg, @width, @height, @radius, @font-size ){
+    .situate();
+    background-color: @button-bg;
+    color: @main-bg;
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    border: 1px solid @button-bg;
+    font-size: @font-size;
+    padding-bottom: 0;
+}
